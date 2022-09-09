@@ -11,7 +11,7 @@ stage("Compress and deliver")
 //sh """ zip dir.zip -r C:/Users/lmurali/Documents/Awards """
 //sh """ Compress-Archive -LiteralPath 'C:/Users/lmuraliDocuments/Awards' -DestinationPath 'C:/Users/lmurali/Documents/Awards.zip' """
 bat """
-		cd C:\\Users\\lmurali\\Documents
+		
         %SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe .//Test.ps1 
         """
 		echo "Folder Zipped";
