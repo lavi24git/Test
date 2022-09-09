@@ -1,1 +1,8 @@
-Jenkins test file
+node{
+stage("copyfolder and deliver")
+{
+echo "coying folder "
+bat """xcopy C:\\Users\\lmurali\\Documents\\Awards C:\\Users\\lmurali\\Desktop /S /E /F /Y /D """
+
+}
+}
