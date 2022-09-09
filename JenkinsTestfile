@@ -1,17 +1,23 @@
 node{
 stage("Compress and deliver")
 {
- echo "ZIP"
+ //echo "ZIP"
  //zip 'Test.zip'-r dir:'C:\\Users\\lmurali\\Documents\\Awards'
- sh """
- cd C:/Users/lmurali/Documents/Awards
- zip -Tv Awards.zip
- """;
- echo "END - ZIP"
+ //sh """
+ //cd C:/Users/lmurali/Documents/Awards
+ //zip -Tv Awards.zip
+ //""";
+ //echo "END - ZIP"
 //sh """ zip dir.zip -r C:/Users/lmurali/Documents/Awards """
 //sh """ Compress-Archive -LiteralPath 'C:/Users/lmuraliDocuments/Awards' -DestinationPath 'C:/Users/lmurali/Documents/Awards.zip' """
+bat """
+		cd C:\\Users\\lmurali\\Documents
+        %SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe .//Test.ps1 
+        """
+		echo "Folder Zipped";
+}
 echo "coying folder "
-bat """xcopy C:\\Users\\lmurali\\Documents\\Test.zip C:\\Users\\lmurali\\Desktop /S /E /F /Y /D """
+bat """xcopy C:\\Users\\lmurali\\Documents\\Awards.zip C:\\Users\\lmurali\\Desktop /S /E /F /Y /D """
 
 }
 }
