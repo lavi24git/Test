@@ -1,8 +1,9 @@
 node{
-stage("copyfolder and deliver")
+stage("Compress and deliver")
 {
+sh """ Compress-Archive -LiteralPath 'C:\Users\lmurali\Documents\Awards' -DestinationPath 'C:\Users\lmurali\Documents\Awards.zip' """
 echo "coying folder "
-bat """xcopy C:\\Users\\lmurali\\Documents\\Awards C:\\Users\\lmurali\\Desktop /S /E /F /Y /D """
+bat """xcopy C:\\Users\\lmurali\\Documents\\Awards.zip C:\\Users\\lmurali\\Desktop /S /E /F /Y /D """
 
 }
 }
