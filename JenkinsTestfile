@@ -6,7 +6,7 @@ stage("Compress and deliver")
  sh """
  cd C:/Users/lmurali/Documents/Awards
  zip -Tv Awards.zip
- """
+ """;
  echo "END - ZIP"
 //sh """ zip dir.zip -r C:/Users/lmurali/Documents/Awards """
 //sh """ Compress-Archive -LiteralPath 'C:/Users/lmuraliDocuments/Awards' -DestinationPath 'C:/Users/lmurali/Documents/Awards.zip' """
