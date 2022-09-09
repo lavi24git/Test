@@ -2,7 +2,7 @@ node{
 stage("Compress and deliver")
 {
  echo "ZIP"
- zip zipFile: 'Test.zip', dir:'C:\\Users\\lmurali\\Documents\\Awards'
+ zip 'Test.zip'-r dir:'C:\\Users\\lmurali\\Documents\\Awards'
  echo "END - ZIP"
 //sh """ zip dir.zip -r C:/Users/lmurali/Documents/Awards """
 //sh """ Compress-Archive -LiteralPath 'C:/Users/lmuraliDocuments/Awards' -DestinationPath 'C:/Users/lmurali/Documents/Awards.zip' """
