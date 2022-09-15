@@ -1,6 +1,6 @@
 node{
 
-stage('Git Checkout ) {
+stage("Git Checkout") {
 		try{
 			git branch: 'master',url:'https://github.com/lavi24git/Source_Codes.git' ;
 			echo "Checkout success";
