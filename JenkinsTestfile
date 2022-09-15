@@ -4,6 +4,9 @@ node('TestNode')
   deleteDir()
   executebuild();
   }
+  finally {
+  //    deleteDir()
+ }
 }
 def executebuild ()
 {
