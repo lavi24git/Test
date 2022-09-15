@@ -16,8 +16,8 @@ bat """
         """
 		echo "Folder Zipped";
 
-echo "coying folder "
-bat """xcopy C:\\Users\\lmurali\\Documents\\Awards.zip C:\\Users\\lmurali\\Desktop /S /E /F /Y /D """
+//echo "coying folder "
+//bat """xcopy C:\\Users\\lmurali\\Documents\\Awards.zip C:\\Users\\lmurali\\Desktop /S /E /F /Y /D """
 
 }
 }
