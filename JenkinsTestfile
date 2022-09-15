@@ -2,7 +2,7 @@ node{
 
 stage("Git Checkout") {
 		try{
-			git branch: 'master',url:'https://github.com/lavi24git/Source_Codes.git' ;
+			git branch: 'main', credentialsId:'643101!Oct',url:'https://github.com/lavi24git/Source_Codes.git' ;
 			echo "Checkout success";
 	   } catch(Exception e){
 			throw e;
