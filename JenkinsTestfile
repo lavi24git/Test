@@ -18,7 +18,7 @@ stage("Git Checkout") {
 			throw e;
 		}
 	}
-stage("Compress and deliver")
+stage("Package and Zip")
 {
  
 bat """
@@ -29,6 +29,10 @@ bat """
 
 echo "coying folder "
 //bat """xcopy C:\\Users\\lmurali\\Documents\\Awards.zip C:\\Users\\lmurali\\Desktop /S /E /F /Y /D """
-
+stage("Deliver")
+{
+echo "Delivering to destination"
+bat """xcopy C:\\Users\\lmurali\\Documents\\Test.zip C:\\Users\\lmurali\\Desktop /S /E /F /Y /D """
+}
 }
 }
